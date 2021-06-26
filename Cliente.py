@@ -1,7 +1,7 @@
 import socket
 
 servidor = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-servidor.connect(("127.0.0.3", 444))
+servidor.connect(("127.0.0.3", 4000))
 mensaje = input("Manda un mensaje: ")
 mensaje_listo = str.encode(mensaje, "utf-8")
 servidor.send(mensaje_listo)
